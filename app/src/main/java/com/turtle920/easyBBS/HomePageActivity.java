@@ -306,7 +306,6 @@ public class HomePageActivity extends AppCompatActivity
         } else if (id == R.id.nav_settings) {
             Intent intent = new Intent(HomePageActivity.this, EditMyInfoActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_myPost) {
 
         } else if (id == R.id.nav_myMessage) {
             Intent intent = new Intent(HomePageActivity.this, MessageActivity.class);

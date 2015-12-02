@@ -7,4 +7,5 @@ public class JsonReplyInfo {
     String content;
     String replytime;
     String ip;
+    String username;
 }

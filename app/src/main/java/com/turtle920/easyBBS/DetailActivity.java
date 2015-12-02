@@ -193,8 +193,7 @@ public class DetailActivity extends AppCompatActivity implements AdapterView.OnI
                         JsonUserinfo userinfo = gson.fromJson(response, JsonUserinfo.class);
                         TextView textView1 = (TextView) findViewById(R.id.textView_detailActivity_username);
                         textView1.setText(userinfo.username);
-                        TextView textView2 = (TextView) findViewById(R.id.textView_detailActivity_userinfo);
-                        textView2.setText(userinfo.username + "比较懒什么都没留下");
+
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -225,7 +224,7 @@ public class DetailActivity extends AppCompatActivity implements AdapterView.OnI
                             List<JsonReplyInfo> replyInfos = gson.fromJson(response, new TypeToken<List<JsonReplyInfo>>() {
                             }.getType());
 
-                            textView1.setText("共" + replyInfos.size() + "个回复");
+                            textView1.setText(replyInfos.size() + " replies");
 
                             listItem.clear();
                             for (int i = 0; i < replyInfos.size(); i++) {
@@ -233,8 +232,8 @@ public class DetailActivity extends AppCompatActivity implements AdapterView.OnI
 
                                 HashMap<String, Object> map = new HashMap<String, Object>();
                                 //"ItemImage", "ItemUsername", "ItemContent", "ItemTime"},
-                                map.put("ItemImage", R.drawable.sample_avatar);//加入图片
-                                map.put("ItemUsername", replyInfo.userid);
+                                map.put("ItemImage", R.drawable.my_avatar);//加入图片
+                                map.put("ItemUsername", replyInfo.username);
                                 map.put("ItemContent", replyInfo.content);
                                 map.put("ItemTime", replyInfo.replytime);
                                 //这个地方精髓哈，压replyId到数据数组里面，但是不和adapter绑定
@@ -244,7 +243,7 @@ public class DetailActivity extends AppCompatActivity implements AdapterView.OnI
 
                             mSimpleAdapter.notifyDataSetChanged();
                         } else {
-                            textView1.setText("暂时还没有回复");
+                            textView1.setText("no reply yet");
                         }
 
                     }

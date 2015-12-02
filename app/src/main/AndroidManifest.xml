@@ -10,15 +10,21 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.turtle920.easyBBS.LoginActivity" />
-        <activity android:name="com.turtle920.easyBBS.WelcomeActivity">
+        <activity
+            android:name="com.turtle920.easyBBS.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name="com.turtle920.easyBBS.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.turtle920.easyBBS.ChooseUserNameActivity" />
+        <activity
+            android:name="com.turtle920.easyBBS.ChooseUserNameActivity"
+            android:label="Choose a nick" />
         <activity
             android:name="com.turtle920.easyBBS.HomePageActivity"
             android:label="@string/title_activity_home_page"
@@ -31,13 +37,19 @@
             android:name="com.turtle920.easyBBS.DetailActivity"
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme" />
-        <activity android:name="com.turtle920.easyBBS.PersonActivity" />
-        <activity android:name="com.turtle920.easyBBS.MyPageActivity" />
+        <activity
+            android:name="com.turtle920.easyBBS.PersonActivity"
+            android:label="Profile" />
+        <activity
+            android:name="com.turtle920.easyBBS.MyPageActivity"
+            android:label="My Home Page" />
         <activity
             android:name="com.turtle920.easyBBS.EditMyInfoActivity"
             android:label="@string/title_activity_edit_my_info"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.turtle920.easyBBS.MessageActivity" />
+        <activity
+            android:name="com.turtle920.easyBBS.MessageActivity"
+            android:label="Message" />
         <activity
             android:name="com.turtle920.easyBBS.SendMessageActivity"
             android:label="@string/title_activity_send_message"

@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.turtle920.easyBBS.SendMessageActivity"
-    tools:showIn="@layout/activity_send_message">
+    tools:showIn="@layout/activity_send_message"
+    android:background="@drawable/message_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:hint="输入要发送的内容"
+        android:hint="Type in the message content"
         android:textSize="@dimen/body1" />
 
 

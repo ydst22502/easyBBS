@@ -68,10 +68,10 @@ public class SendMessageActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(String response) {
                             if (response.equals("-1")){
-                                Toast toast = Toast.makeText(getApplicationContext(), "发送失败", Toast.LENGTH_SHORT);
+                                Toast toast = Toast.makeText(getApplicationContext(), "Send failed", Toast.LENGTH_SHORT);
                                 toast.show();
                             }else{
-                                Toast toast = Toast.makeText(getApplicationContext(), "发送成功", Toast.LENGTH_SHORT);
+                                Toast toast = Toast.makeText(getApplicationContext(), "Send successfully", Toast.LENGTH_SHORT);
                                 toast.show();
                                 Intent intent = new Intent(SendMessageActivity.this, HomePageActivity.class);
                                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

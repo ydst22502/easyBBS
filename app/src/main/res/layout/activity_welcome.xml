@@ -8,11 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
+    android:background="@drawable/welcome_bg"
     tools:context="com.turtle920.easyBBS.WelcomeActivity">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="缺个程序员?"
-        android:textSize="30dp"/>
 
 </LinearLayout>

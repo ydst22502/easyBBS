@@ -14,11 +14,14 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_welcome);
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         SharedPreferences sharedPreferences = getSharedPreferences("login", Activity.MODE_PRIVATE);
         String userid = sharedPreferences.getString("userid", "");
         String token = sharedPreferences.getString("token", "");
-
-        Log.d("TAG", userid + " " + token);
 
         if (token.equals("")) {
             Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
@@ -33,6 +36,5 @@ public class WelcomeActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
         }
-
     }
 }

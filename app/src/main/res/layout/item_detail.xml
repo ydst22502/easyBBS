@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/imageView_detailActivity_replyList_avatar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:src="@drawable/sample_avatar" />
 
     <LinearLayout

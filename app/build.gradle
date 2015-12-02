@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.turtle920.ohmycto"
+        applicationId "com.turtle920.easyBBS"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

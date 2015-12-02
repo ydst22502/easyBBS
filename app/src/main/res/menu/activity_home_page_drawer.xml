@@ -12,10 +12,6 @@
             android:icon="@android:drawable/ic_menu_send"
             android:title="Messages" />
 
-        <item
-            android:id="@+id/nav_myPost"
-            android:icon="@android:drawable/ic_menu_recent_history"
-            android:title="My Posts" />
 
         <item
             android:id="@+id/nav_settings"

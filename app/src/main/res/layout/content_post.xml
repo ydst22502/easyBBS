@@ -18,12 +18,12 @@
         android:id="@+id/editText_postActivity_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="标题" />
+        android:hint="Title" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="tag(多个tag用,隔开)"
+        android:hint="tag"
         android:id="@+id/editText_postActivity_tag"/>
 
     <EditText
@@ -31,6 +31,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:hint="写下缺口的详细描述" />
+        android:hint="Content" />
 
 </LinearLayout>

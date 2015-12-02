@@ -16,7 +16,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:src="@drawable/sample_avatar" />
+        android:src="@drawable/my_avatar" />
 
 
     <TextView
