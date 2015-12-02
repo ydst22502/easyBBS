@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 editor.apply();
 
                                 TextView textView = (TextView) findViewById(R.id.textView_loginActivity_error);
-                                textView.setText("正在登陆...");
+                                textView.setText("logging in...");
 
                                 Intent intent = new Intent(LoginActivity.this, HomePageActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             } else {
                                 //认证失败
                                 TextView textView = (TextView) findViewById(R.id.textView_loginActivity_error);
-                                textView.setText("邮箱或密码错误，请重试");
+                                textView.setText("The email and password you entered don't match.");
                             }
                         }
                     }, new Response.ErrorListener() {
@@ -129,7 +129,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             if (response.equals("1")) {//没有重复邮箱
 
                                 TextView textView = (TextView) findViewById(R.id.textView_loginActivity_error);
-                                textView.setText("请稍后...");
+                                textView.setText("waiting...");
 
                                 Intent intent = new Intent(LoginActivity.this, ChooseUserNameActivity.class);
                                 Bundle bundle = new Bundle();
@@ -139,7 +139,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 startActivity(intent);
                             } else{//有重复邮箱
                                 TextView textView = (TextView) findViewById(R.id.textView_loginActivity_error);
-                                textView.setText("邮箱已注册过，请勿重复注册");
+                                textView.setText("This email address already corresponds to an account.");
                             }
                         }
                     }, new Response.ErrorListener() {

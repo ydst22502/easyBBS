@@ -8,63 +8,63 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home_page_bg"
     tools:context="com.turtle920.easyBBS.PersonActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="6"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/sample_avatar" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView_personActivity_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="用户名"
-                android:textSize="@dimen/header3" />
-
-            <TextView
-                android:id="@+id/textView_personActivity_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="email"
-                android:textSize="@dimen/body1"/>
-        </LinearLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sample_avatar" />
 
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_personActivity_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="用户名"
+        android:textSize="@dimen/header3" />
+
+    <TextView
+        android:id="@+id/textView_personActivity_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="email"
+        android:textSize="@dimen/body1" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/separator"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="个人简介"
+        android:text="Self Introduction: "
         android:textSize="@dimen/body1" />
 
     <TextView
         android:id="@+id/textView_personActivity_introduction"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:text="自我介绍内容"
+        android:layout_weight="1"
+        android:text="Self Introduction Content"
         android:textSize="@dimen/body1" />
 
     <TextView
         android:id="@+id/textView_personActivity_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="6"
+        android:layout_weight="2"
         android:gravity="center"
-        android:text="私信ta"
+        android:text="Send Message"
+        android:textColor="@color/colorAccent"
         android:textSize="@dimen/header3" />
 
 </LinearLayout>

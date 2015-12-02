@@ -109,7 +109,7 @@ public class HomePageActivity extends AppCompatActivity
                             JsonHomePageList homePageList = homePageLists.get(i);
 
                             HashMap<String, Object> map = new HashMap<String, Object>();
-                            map.put("ItemImage", R.drawable.sample_avatar);//加入图片
+                            map.put("ItemImage", R.drawable.my_avatar);//加入图片
                             map.put("ItemTitle", homePageList.title);
                             map.put("ItemText", homePageList.content);
                             map.put("ItemTime", homePageList.posttime);
@@ -214,7 +214,7 @@ public class HomePageActivity extends AppCompatActivity
                         textView1.setText(userinfo.username);
 
                         TextView textView2 = (TextView) findViewById(R.id.textView_navHeaderHomePage_selfIntroduction);
-                        textView2.setText("userid:" + userid + "的简介（待完善）");
+                        textView2.setText(userinfo.introduction);
 
                     }
                 }, new Response.ErrorListener() {
@@ -260,7 +260,7 @@ public class HomePageActivity extends AppCompatActivity
                                 Log.d("TAG", homePageList.toString());
 
                                 HashMap<String, Object> map = new HashMap<String, Object>();
-                                map.put("ItemImage", R.drawable.sample_avatar);//加入图片
+                                map.put("ItemImage", R.drawable.my_avatar);//加入图片
                                 map.put("ItemTitle", homePageList.title);
                                 map.put("ItemText", homePageList.content);
                                 map.put("ItemTime", homePageList.posttime);
@@ -303,17 +303,14 @@ public class HomePageActivity extends AppCompatActivity
 
         if (id == R.id.nav_homePage) {
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_settings) {
+            Intent intent = new Intent(HomePageActivity.this, EditMyInfoActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_myPost) {
 
         } else if (id == R.id.nav_myMessage) {
             Intent intent = new Intent(HomePageActivity.this, MessageActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

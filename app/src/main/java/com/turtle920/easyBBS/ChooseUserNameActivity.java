@@ -75,7 +75,7 @@ public class ChooseUserNameActivity extends AppCompatActivity implements View.On
 
                         } else {//有重名
                             TextView textView = (TextView) findViewById(R.id.textView_chooseUserNameActivity_error);
-                            textView.setText("有人已经霸占这个名字了，换一个咯");
+                            textView.setText("This nick is already taken ╮(╯▽╰)╭, change another");
                         }
                     }
                 }, new Response.ErrorListener() {

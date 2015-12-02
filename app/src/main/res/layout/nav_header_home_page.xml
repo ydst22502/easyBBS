@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
+    android:background="@drawable/home_page_nav_bg"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -18,15 +18,16 @@
 
         <ImageView
             android:id="@+id/imageView_homePageNav_avatar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:src="@android:drawable/sym_def_app_icon" />
+            android:src="@drawable/my_avatar" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="注销"
+            android:text="Log Out"
+            android:textColor="@color/colorAccent"
             android:id="@+id/textView_homePageActivity_logout"/>
     </LinearLayout>
 
@@ -42,6 +43,8 @@
         android:id="@+id/textView_navHeaderHomePage_selfIntroduction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自我描述(功能待完善)" />
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="自我描述" />
 
 </LinearLayout>

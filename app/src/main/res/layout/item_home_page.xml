@@ -23,7 +23,8 @@
             android:ellipsize="end"
             android:maxEms="10"
             android:singleLine="true"
-            android:text="标题" />
+            android:text="标题"
+            android:textColor="@color/colorText" />
 
         <TextView
             android:id="@+id/textView_homePageList_content"
@@ -31,13 +32,15 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:lines="3"
-            android:text="内容" />
+            android:text="内容"
+            android:textColor="@color/colorText" />
 
         <TextView
             android:id="@+id/textView_homePageList_postTime"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="发帖时间" />
+            android:text="发帖时间"
+            android:textColor="@color/colorText" />
     </LinearLayout>
 
 </LinearLayout>

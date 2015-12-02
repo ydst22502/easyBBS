@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
+    android:background="@drawable/login_bg"
     tools:context="com.turtle920.easyBBS.EditMyInfoActivity"
     tools:showIn="@layout/activity_edit_my_info">
     <TextView
@@ -18,34 +19,40 @@
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:text="昵称"
+        android:textColor="@color/colorGray"
         android:textSize="@dimen/header3"/>
     <TextView
         android:id="@+id/editText_editMyInfoActivity_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
         android:singleLine="true"
         android:text="邮箱"
         android:textSize="@dimen/header3"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="上传头像:"
+        android:textColor="@color/colorGray"
+        android:text="Avatar: "
         android:textSize="@dimen/body1"/>
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/sample_avatar"/>
+        android:src="@drawable/my_avatar"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
         android:singleLine="true"
-        android:text="编辑个人简介:"
+        android:text="Edit Self-introduction:"
         android:textSize="@dimen/body1"/>
     <EditText
         android:id="@+id/editText_editMyInfoActivity_introduction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="自我介绍"
+        android:textColor="@color/colorBackground"
+        android:background="@null"
         android:textSize="@dimen/body1"/>
 
 </LinearLayout>

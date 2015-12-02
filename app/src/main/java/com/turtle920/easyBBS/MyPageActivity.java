@@ -41,7 +41,7 @@ public class MyPageActivity extends AppCompatActivity implements View.OnClickLis
 
         mQueue = Volley.newRequestQueue(getApplicationContext());
         requestUserInfo(userid);
-        requestAvatar(userid);
+        //requestAvatar(userid);
 
         TextView textView1 = (TextView) findViewById(R.id.textView_myPageActivity_edit);
         textView1.setOnClickListener(this);

@@ -41,7 +41,7 @@
         <activity
             android:name="com.turtle920.easyBBS.SendMessageActivity"
             android:label="@string/title_activity_send_message"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

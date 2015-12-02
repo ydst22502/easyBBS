@@ -12,6 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.turtle920.easyBBS.HomePageActivity"
+    android:background="@drawable/home_page_bg"
     tools:showIn="@layout/app_bar_home_page">
 
     <ListView

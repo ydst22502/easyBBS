@@ -107,10 +107,10 @@ public class EditMyInfoActivity extends AppCompatActivity {
                     public void onResponse(String response) {
                         Log.d("TAG", response);
                         if (response.equals("-1")) {
-                            Toast toast = Toast.makeText(getApplicationContext(), "保存失败(邮箱或用户名重复)", Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getApplicationContext(), "update failed", Toast.LENGTH_SHORT);
                             toast.show();
                         } else {
-                            Toast toast = Toast.makeText(getApplicationContext(), "用户信息更新成功", Toast.LENGTH_SHORT);
+                            Toast toast = Toast.makeText(getApplicationContext(), "update successfully!", Toast.LENGTH_SHORT);
                             toast.show();
                             Intent intent = new Intent(EditMyInfoActivity.this, MyPageActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
